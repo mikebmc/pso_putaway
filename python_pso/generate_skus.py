@@ -47,8 +47,3 @@ class GenerateSkus:
 					associatedDict[randSku] = round(random.random(),3)
 			skuDict[sku] = associatedDict
 		return skuDict
-
-
-#skus = GenerateSkus().getSkus(50,3)
-#for key,val in skus.items():
-#	print(key,':',val)
