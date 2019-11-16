@@ -4,7 +4,7 @@ class GenerateSkus:
 	def permutateSkus(self,numOfSkus):
 		"""
 		:type numOfSkus: int
-		:rtype: List[string]
+		:rtype: Dictionary[string : Dictionary[string : float]] 
 		"""
 		skus = []
 		letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
