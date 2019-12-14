@@ -89,3 +89,4 @@ def testSkus():
 		tSku.remove_from_location('ST1')
 	except:
 		print('exception caught while attempting to remove location=ST1')
+	
