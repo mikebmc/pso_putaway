@@ -22,7 +22,7 @@ class ImportHack:
 		except Exception:
 			raise "import hack failed"
 			
-ImportHack()
+# ImportHack()
 
 import random
 from sku_object import PsoSku
@@ -75,6 +75,6 @@ class GenerateSkus:
 		return skuDict
 		
 class TestSkuGeneration:
-	skus = GenerateSkus().getSkus(10,5)
+	skus = GenerateSkus().getSkus(5000,5)
 	for sku in skus.values():
 		print(sku.name, sku.associated_skus)
