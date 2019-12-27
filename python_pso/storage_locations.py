@@ -1,9 +1,26 @@
 """
+model storage locations to enable 0(1) lookup
+rows are lettered, while locations are numbered
+structured as a dictionary of types {char:[string]}
+"""
+class StorageLocations:
+	def create(self,locationsPerRow):
+		"""
+		type locationsPerRow: int
+		rtype: Dictionary(char : List[string])
+		"""
+		letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+		storageLocations = {}
+		storageLocations['index'] = letters
+		for c in letters:
+			storageLocations[c] = [None]*locationsPerRow
+		return storageLocations
+		
+"""
 the goal of this module is to take a list of skus and
 a set of locations, and to populate the locations with
 random skus until the locations are some percentage full
 """
-
 class PrepopulateLocations:
 	def start(self,skus,locations,percentFill):
 		"""
